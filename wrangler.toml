@@ -1,0 +1,12 @@
+name = "hades-save-admin-api"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+# Замените KV_NAMESPACE_ID значением из Cloudflare KV
+[[kv_namespaces]]
+binding = "STORE"
+id = "KV_NAMESPACE_ID"
+
+[vars]
+# Замените на точный адрес GitHub Pages БЕЗ конечного слэша
+ALLOWED_ORIGIN = "https://YOUR_GITHUB_USERNAME.github.io"
